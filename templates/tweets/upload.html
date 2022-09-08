@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block content %}
+{% load static %} {% load cloudinary %}
+
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload</button>
+      </form>
+
+      {% if url %}
+        <img src="{{ img_obj.image.url}}" alt="connect" style="max-height:300px;">
+      {% endif %}
+      
+{% endblock %}

@@ -1,0 +1,256 @@
+/*
+COMMON
+*****************/
+
+html,
+body {
+  height: 100%;
+  align-items: center;
+}
+
+.content {
+  max-width: 600px;
+  height: 100%;
+  margin: auto;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 0;
+}
+div.post-form{
+    position: relative;
+}
+
+.content img {
+  display: flex;
+  top: 0;
+  height: 50px;
+  margin: auto 0;
+  padding: 0 30px;
+}
+
+.content h1 {
+  position: relative;
+  left: 70px;
+  top: -35px;
+  padding: 0 30px;
+  margin: 0 auto;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/*
+POST
+****************/
+
+.post_form {
+  
+  position: absolute;
+  padding: 0;
+  width: 600px;
+
+  margin: auto;
+  border-bottom: 1px solid gray;
+}
+
+.post_form img {
+  top: 90px;
+  bottom: 0;
+  left: 0;
+  right: 25px;
+  width: 60px;
+  height: 75px;
+  margin: auto 0;
+  border-radius: 50%;
+}
+
+.post_form #name {
+  width: 52%;
+  position: absolute;
+  top: 0px;
+  left: 115px;
+  padding: 10px;
+  margin: 5px auto;
+  border: 1px solid lightgray;
+}
+
+.post_form textarea {
+  display: flex;
+  position: relative;
+  margin: auto 0;
+  width: 52%;
+  top: -15px;
+  left: 115px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+
+.post_form .form-control {
+  width: 40%;
+  margin: auto 40px;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 71px;
+  border: 1px solid lightgray;
+  cursor: pointer;
+}
+
+.post_form button {
+  display: flex;
+  position: relative;
+  margin-left: 385px;
+  top: -26px;
+  width: 60px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 102, 255, 0.895);
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 102, 255, 0.895);
+  cursor: pointer;
+}
+
+.posts {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: auto;
+    /* bottom: 0%; */
+    height: 0;
+    margin-top: 274px;
+}
+
+.posts ul {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 135px;
+    right: 40px;
+    padding: 10px 10px;
+    width: 600px;
+    height: 115px;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.posts li {
+    display: flex;
+    position: relative;
+    top: -215px;
+    right: 0px;
+    padding: 15px 10px;
+    width: 583px;
+    margin: 27px;
+    /* border-bottom: 1px solid gray; */
+    border: 1px solid;
+}
+
+.posts li .menu_icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.posts li .menu {
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  border: 1px solid lightgray;
+  padding: 5px;
+  font-size: 12px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border-radius: 5px;
+}
+
+.posts li .menu a {
+  text-decoration: none;
+}
+
+.posts li .logo {
+  flex-basis: 20%;
+}
+
+.posts li .logo img {
+  width: 45px;
+}
+
+.posts li .name_body {
+  flex-basis: 120%;
+}
+
+.posts li .name_body .name {
+  font-weight: bold;
+}
+
+.posts li .name_body .datetime {
+  color: gray;
+}
+
+.posts .name_body #btnHeart {
+  height: 0;
+  width: 0;
+  padding-bottom: 10px;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+@media screen and (max-width: 500px) {
+  .posts li .name_body .name {
+    font-size: 20px;
+  }
+}
+
+.upload-img{
+    width: 70%;
+    height: inherit !important;
+    margin-top: 30px !important;
+}
+
+.like-link{
+    margin: 21px 0px;
+    display: flex;
+    position: relative;
+    top: 30px;
+    width: 100px;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+.edit-content img.img{
+    width: 70%;
+    border-radius: 10px;
+    height: inherit;
+    margin: 10px auto;
+}
+.content.edit-content .post_form .edit-cancel {
+    display: block;
+    width: 88px;
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 102, 255, 0.895);
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 102, 255, 0.895);
+    cursor: pointer;
+    text-decoration: none;
+    margin: 17px;
+    position: initial;
+    text-align: center;
+    height: unset;
+}
+
+div.btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px 0;
+}
